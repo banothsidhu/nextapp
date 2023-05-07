@@ -1,6 +1,7 @@
-import React from 'react'
+import Link from 'next/link';
 import styles from '@/app/styles/navbar.module.css'
-import { headers } from 'next/dist/client/components/headers'
+import Image from 'next/image'
+
 const Header = () => {
     return (
        <header className={styles.main_header}>
@@ -8,7 +9,7 @@ const Header = () => {
 
         </div>
         <Link href="/">
-            
+            <Image src='/logo.png'width={150} height={30}/>
         </Link>
        </header>
     )
