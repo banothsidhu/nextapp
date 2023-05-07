@@ -1,21 +1,24 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
-import dynamic from 'next/dynamic'
+import Header from './components/Header'
+import {Mulish} from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const mulish = Mulish ({
+  weight:'400',
+  subsets:['latin'],
+  display:"swap"
+})
 
 export const metadata = {
-  title: 'Netflix Clone',
-  description: 'This is a clone of Netflix. Made by B.Sidharth',
+  title:"Next.js",
 }
 
-const Header = dynamic(() => import('./components/Header'), { ssr: false })
-
-export default function RootLayout({ children }) {
+export default function RootLayout ({children}){
   return (
-    <html lang="en">
-      <Header></Header>
-      <body className={inter.className}>{children}</body>
+    <html lang='en' className={mulish.className}>
+      <body>
+        <Header/>
+        {children}
+      </body>
     </html>
   )
 }

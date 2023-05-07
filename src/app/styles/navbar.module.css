@@ -1,5 +1,5 @@
 .main_header{
-    padding: 0 9rem;
+    padding: 0 8rem;
     height: 4rem;
     display: flex;
     justify-content: space-between;
@@ -21,7 +21,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 3.2rem;
+    gap: 1rem;
 }
 
 .navbarItem {
@@ -32,7 +32,7 @@
 
 .navbarList a {
     font-weight: bold;
-    font-size: 1.8rem;
+    font-size: 1rem;
     color: #161617;
     padding: 1.3rem 1rem;
     margin: 0;
