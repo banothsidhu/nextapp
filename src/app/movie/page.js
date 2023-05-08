@@ -3,7 +3,18 @@ import Link from 'next/link'
 export const metadata = {
     title: "Movie",
 }
-const page = () => {
+
+const Movie = () => {
+ 
+    const url = env.process.API_URL
+    const options = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': env.process.RAPID_KEY,
+            'X-RapidAPI-Host': 'netflix54.p.rapidapi.com'
+          }
+    };
+
     return (
 
 
@@ -17,4 +28,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Movie
