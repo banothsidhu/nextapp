@@ -3,7 +3,7 @@ import Header from './components/Header'
 import {Mulish} from 'next/font/google'
 
 const mulish = Mulish ({
-  weight:['400',"500",'600',"700","800","900","1000"],
+  weight:["400","500",'600',"700","800","900"],
   subsets:['latin'],
   display:"swap"
 })
