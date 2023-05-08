@@ -12,15 +12,13 @@ const Herosection = () => {
                     <div className={heroStyles.hero_content}>
                         <h1>Netflix Clone</h1>
                         <p>From award-winning dramas to blockbuster action movies, we've got you covered. Browse our selection of the latest and greatest movies, and find your new favorite today.
-
-                        </p>                        <Link href="/movie">
+                        </p>
+                        <Link href="/movie">
                             <button >Explore Movies</button>
                         </Link>
-
-                        <div className={heroStyles.hero_image}>
-<Image src={'/hero.svg'} width={500} height={500}></Image>
-                        </div>
-
+                    </div>
+                    <div className={heroStyles.hero_image}>
+                        <Image src={'/hero.svg'} width={650} height={650}></Image>
                     </div>
                 </div>
             </div>

@@ -48,11 +48,13 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-bottom: 700px;
 }
 
 .hero_image img{
     max-width: 100%;
     height: auto;
+
 }
 
 /*waves effect */
