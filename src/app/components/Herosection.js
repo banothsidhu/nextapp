@@ -27,5 +27,5 @@ const Herosection = () => {
         </main>
     )
 }
-
+//
 export default Herosection
