@@ -17,9 +17,9 @@ const page = async ({ params }) => {
     const data = await res.json()
     const main_data = data[0].details
 
-    const castList = main_data.cast.map((cast, index) => {
+    const creatorsList = main_data.creators.map((creators, index) => {
         return (
-            <li key={index}>{cast.name}</li>
+            <li key={index}>{creators.name}</li>
         )
     })
 
@@ -49,7 +49,13 @@ const page = async ({ params }) => {
                             <span style={{ color: 'red', fontWeight: 'bold' }}>{maturityRating}</span>
                         </div>
                     </div>
-                    
+                    <div style={{ display: 'flex', flexDirection: 'column', margin: '2rem' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', marginTop: '1rem' }}>
+                            <span style={{ color: 'gray', fontWeight: 'bold', marginRight: '1rem' }}>Creators:</span>
+                            <span style={{ color: 'red', fontWeight: 'bold' }}>{creatorsList}</span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
