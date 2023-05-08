@@ -89,6 +89,7 @@
     .hero_image{
         justify-content: center;
         order: 0;
+        margin-bottom: 10px;
     }
 
     .hero_image img{

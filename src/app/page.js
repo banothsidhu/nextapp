@@ -5,7 +5,7 @@ export const metadata = {
 }
 const page = () => {
   return (
-   <Herosection/>
+   <Herosection title="Netflix Clone" imageURL={'/home.svg'} imageHeight={650} imageWidth = {650} data={'From award-winning dramas to blockbuster action movies, we have got you covered. Browse our selection of the latest and greatest movies, and find your new favorite today.'}/>
   )
 }
 
