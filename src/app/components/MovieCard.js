@@ -11,8 +11,8 @@ const MovieCard = (curlElem) => {
                     <Image src={curlElem.jawSummary.backgroundImage.url} alt='Image' width={'416'} height={'234'}></Image>
                 </div>
                 <div className={styles.card_data}>
-                    <h2>{title}</h2>
-                    <p>{synopsis}</p>
+                    <h2>{`${title.substring(0,18)}...`}</h2>
+                    <p>{`${synopsis.substring(0,100)}...`}</p>
                     <Link href={`/movie/${id}`} >
                         <button >Read More</button>
                     </Link>

@@ -25,11 +25,13 @@ const Movie = async () => {
             <section className={styles.movieSection}>
                 <div className={styles.container}>
                     <h1>Movies and Series</h1>
+                    <div className={styles.card_section}>
                     {
                         main_data.map((curlElem) => {
                             return <MovieCard key={curlElem.jawSummary.id} {...curlElem} />
                         })
                     }
+                    </div>
                 </div>
             </section>
         </>
