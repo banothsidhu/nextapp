@@ -1,7 +1,9 @@
 import React from 'react'
 import styles from '@/app/styles/common.module.css'
 import Image from 'next/image'
-
+export const metadata = {
+    title:'Movie Data'
+  }
 const page = async ({ params }) => {
     const id = params.id
 

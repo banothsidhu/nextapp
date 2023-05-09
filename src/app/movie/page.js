@@ -7,7 +7,6 @@ export const metadata = {
 }
 
 const Movie = async () => {
-
     const url = process.env.API_URL
     const options = {
         method: 'GET',
@@ -19,7 +18,7 @@ const Movie = async () => {
     const res = await fetch(url, options)
     const data = await res.json()
     const main_data = data.titles;
-    console.log(data);
+    
     return (
         <>
             <section className={styles.movieSection}>
